@@ -29,12 +29,12 @@ padding: 10px;
 }
 #menu{
     margin-top: auto;
+    margin-left: 10px;
 }
 #sidebar{
-    width: 250px;
-    height: 88px;
     background: red;
     margin: 0;
+    margin-left: 20px;
 }
 .container{
     display: flex;    height: 88px;
@@ -103,4 +103,18 @@ padding: 10px;
 #logo img{
     height: 46px;
     width: 180px;
+}
+#sidebar:before {
+    position: absolute;
+    content: '';
+    width: 4%;
+    height: 88px;
+    top: 10px;
+    left: 1133px;
+    background-color: blue;
+    transform: skew(25deg);
+    z-index: 1;
+}
+#sidebar:after {
+    transform: skew(45deg); 
 }
