@@ -4,6 +4,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    margin: 0;
     flex-direction: column;
 }
 header{
@@ -32,13 +33,13 @@ padding: 10px;
     margin-left: 10px;
 }
 #sidebar{
-    background: red;
     margin: 0;
-    margin-left: 20px;
-}
-.container{
-    display: flex;    height: 88px;
-    flex-direction: column;    padding: 0;
+  }
+.container1{
+    display: flex;  
+    flex-direction: column;   
+    padding: 0;
+    background: linear-gradient(225deg,#03bca6 0,#03e69a 50%);
     }
 .items{
     text-align: center;
@@ -72,7 +73,7 @@ padding: 10px;
     flex-grow: 1;
     margin: 5px;
 }
-.subitems:after {
+/* .subitems:after {
     content: '';
     position: absolute;
     top: 0;
@@ -88,7 +89,7 @@ padding: 10px;
 }
 .subitem1, .subitem2 ,.subitem3{
    border:1px solid blue skewX(30deg);
- }
+ } */
  .line{
     background: blue;
     width: 1.5px;
@@ -104,17 +105,184 @@ padding: 10px;
     height: 46px;
     width: 180px;
 }
-#sidebar:before {
+/* #sidebar:before {
     position: absolute;
     content: '';
     width: 4%;
     height: 88px;
     top: 10px;
-    left: 1133px;
+    left: 1105px;
     background-color: blue;
     transform: skew(25deg);
     z-index: 1;
-}
+} */
 #sidebar:after {
     transform: skew(45deg); 
 }
+.slidingImages{
+    max-height: 100%;
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 14px;;
+}
+.slidingImages .container-fluid{
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.lastItems .container{
+    padding-right: 0;
+}
+.container-fluid .container {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+}
+.item{
+    height: fit-content;
+    position: relative;
+    margin: 8%;
+    display: flex;
+    flex-basis: 50%;
+}
+.image{
+    max-width: 50%;
+    display: flex;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+}
+.caption{
+    padding: 15px;
+}
+.container .text-right button{
+    background-color: blue;
+    border: none;
+}
+h1{
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+span{
+    color: blue;
+}
+.carousel-additional-btns{
+    margin-left: auto;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 14;
+}
+.btn-skew{
+    display: inline-block;
+    padding: 4px 5px 4px 20px;
+    text-decoration: none;
+    color: #ffff;
+    position: relative;
+}
+.btn-skew:before{
+    box-sizing: border-box;
+}
+.btn-skew:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -17px;
+    bottom: 0;
+    left: 30px;
+    border: 1px solid #1d56e8;
+    background-color: #1d56e8;
+    border-width: 0 1px 0 0;
+    -webkit-transform: skewX(40deg);
+    transform: skewX(40deg);
+    z-index: 1;
+}
+.btn-skew span {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 14px;
+}
+.carousel {
+    max-height: 520px;
+}
+.controls .prev, .controls .next{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    height: 75px;
+    width: 60px;
+    margin-top: -20px;
+    color: #04ebab;
+    text-align: center;
+    line-height: 85px;
+    font-size: 65px;
+    cursor: pointer;
+}
+.controls .prev{
+    left: 0;
+}
+.controls .next{
+    right: 0;
+}
+.controls .prev:hover , .controls .next:hover{
+    color: white;
+} 
+.carousel-inner{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+}
+/* ********************************************* */
+.container1{
+    background-color: firebrick;
+    max-height: 520px;
+  }
+  .corousel-item{
+    display: flex;
+  }
+  #mySlideShow{
+    padding: 8%;
+  }
+  .image{
+    width: 40%;
+  }
+  .wrapperItem{
+    display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-basis: 45%;
+      width: 100%;
+      padding: 5%;
+  }
+  .carousel-caption{
+    position: relative;
+      right: 0;
+      left: 0;
+      color: #fff;
+      text-align: unset;
+    }
+  .caption{
+       width: 45%;padding-top: 15px;
+      position: relative;
+  }
+  span{
+    color: blue;
+      font-weight: 600;
+      font-size: 30px;
+  }
