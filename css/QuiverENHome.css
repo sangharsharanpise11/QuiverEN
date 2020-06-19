@@ -217,28 +217,13 @@ span{
 .carousel {
     max-height: 520px;
 }
-.controls .prev, .controls .next{
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    height: 75px;
-    width: 60px;
-    margin-top: -20px;
-    color: #04ebab;
-    text-align: center;
-    line-height: 85px;
-    font-size: 65px;
-    cursor: pointer;
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 45%;
+    height: 45%;
 }
-.controls .prev{
-    left: 0;
+.carousel-control-prev, .carousel-control-next{
+    width: 8%;
 }
-.controls .next{
-    right: 0;
-}
-.controls .prev:hover , .controls .next:hover{
-    color: white;
-} 
 .carousel-inner{
     top: 0;
     bottom: 0;
