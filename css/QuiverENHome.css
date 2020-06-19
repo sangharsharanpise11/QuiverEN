@@ -266,6 +266,42 @@ span{
        width: 45%;padding-top: 15px;
       position: relative;
   }
+  .carousel-item{
+    animation:slide 2s ease;
+  }
+  @keyframes slide{
+      0%{
+          transform: scale(1.1);
+      }
+      100%{
+          transform: scale(1);
+      }
+  }
+  .carousel-item.active .caption h2{
+      opacity: 0;
+      animation: captionText .5s ease forwards;
+      animation-delay: 1.4s;
+  }
+  .carousel-item.active .caption span{
+    opacity: 0;
+    animation: captionText .8s ease forwards;
+    animation-delay: 1.8s;
+}
+.carousel-item.active .caption button{
+    opacity: 0;
+    animation: captionText 2s ease forwards;
+    animation-delay: 2.5s;
+}
+  @keyframes captionText{
+      0%{
+          opacity: 0;
+          transform: translateX(-200px);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
   span{
     color: blue;
       font-weight: 600;
