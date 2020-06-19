@@ -306,3 +306,27 @@ span{
       font-weight: 600;
       font-size: 30px;
   }
+  .container2{
+    background-color: red;
+    height: 400px;
+  }
+  .container2 .container{
+    background-color: green;
+  }
+  h3 ,#underline-gap{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #09004d;
+    display: flex;
+    justify-content: center;
+  }
+  .animatedParagraph{
+    margin: 55px;
+  }
+  #underline-gap {
+    text-decoration: underline;
+    text-underline-position: under;
+    width: 150px;
+    color: #09004d;
+    margin-left: 0px;
+  }
