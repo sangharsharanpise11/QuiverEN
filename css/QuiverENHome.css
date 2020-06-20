@@ -359,4 +359,14 @@ span{
     padding-right: 2%;
     color: grey;
  }
- .animatedParagraph h3{}
+ .animatedParagraph h3{
+    transform: matrix(1, 0, 0, 1, 0, 0);
+ }
+ @keyframes Slide_Up{
+    0%{
+      transform: translateY(150px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }   
