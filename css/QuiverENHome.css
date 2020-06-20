@@ -307,11 +307,11 @@ span{
       font-size: 30px;
   }
   .container2{
-    background-color: red;
+    /* background-color: red; */
     height: 400px;
   }
   .container2 .container{
-    background-color: green;
+    /* background-color: green; */
   }
   h3 ,#underline-gap{
     font-size: 1.5rem;
@@ -319,6 +319,7 @@ span{
     color: #09004d;
     display: flex;
     justify-content: center;
+
   }
   .animatedParagraph{
     margin: 55px;
@@ -330,3 +331,32 @@ span{
     color: #09004d;
     margin-left: 0px;
   }
+  .wrapperCards{
+    margin-top: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .product_image{
+      width: 82px;
+      height: 82px;
+  }
+  b{
+    margin-bottom: 20px;
+  }
+  .details{
+    padding-top: 10%;
+      display: flex;
+      flex-direction: column;
+  }
+  b{
+      color: blue;
+  }
+  .para{
+    padding-left: 2%;
+    padding-right: 2%;
+    color: grey;
+ }
+ .animatedParagraph h3{}
