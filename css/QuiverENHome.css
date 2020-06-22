@@ -307,12 +307,9 @@ span{
       font-size: 30px;
   }
   .container2{
-    /* background-color: red; */
     height: 400px;
   }
-  .container2 .container{
-    /* background-color: green; */
-  }
+  
   h3 ,#underline-gap{
     font-size: 1.5rem;
     font-weight: 600;
@@ -369,4 +366,35 @@ span{
     100%{
       transform: translateY(0);
     }
+  }
+  @keyframes Slide_Down{
+    0%{
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(150px);
+    }
+  }
+  @keyframes SlideOutLeft{
+    0%{
+      transform: translateX(-20%);
+    }
+    100%{
+      transform: translateX(0);
+    }
   }   
+  @keyframes SlideOutRight{
+    0%{
+      transform: translateX(20%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }   
+  .container3{
+   height: 500px;
+   background-color: cadetblue;
+  }
+  .container{
+  
+  }
