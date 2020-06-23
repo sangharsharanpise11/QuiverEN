@@ -369,10 +369,10 @@ span{
   }
   @keyframes Slide_Down{
     0%{
-      transform: translateY(0);
+      transform: translateY(-150px);
     }
     100%{
-      transform: translateY(150px);
+      transform: translateY(0);
     }
   }
   @keyframes SlideOutLeft{
@@ -395,6 +395,29 @@ span{
    height: 500px;
    background-color: cadetblue;
   }
-  .container{
-  
-  }
+ .wrapperPackets{
+     margin: 5% 5%;
+     justify-content: space-between;
+ }
+ .wrapperPackets> .firstCard, .secondCard, .thirdCard, .fourthCard
+ {
+     /* width: 15%;
+     flex-wrap: wrap;
+     flex: initial;  */
+     background-color: white;
+ } 
+ .card{
+  border-radius: 0;
+ }
+ .card-header{
+   background-color: blue;
+ }
+ .card-title, .card-text{
+   color: black;
+ }
+ ul{
+   list-style: none;
+ }
+ ul li{
+   color: black;
+ }
