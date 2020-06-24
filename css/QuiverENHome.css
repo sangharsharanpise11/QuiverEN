@@ -446,3 +446,11 @@ align-items: center;
 .card:hover{
   transform: translateY(-20px);
 }
+@keyframes Slide_UpCard{
+  0%{
+    transform: translateY(150px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
