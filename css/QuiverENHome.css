@@ -469,5 +469,5 @@ align-items: center;
   color: white;
 }
 .card:hover{
-  transform: translateY(10px);
+  transform: translateY(-20px);
 }
