@@ -416,15 +416,27 @@ span{
  .card-header{
    background-color: blue;
  }
- .card-title, .card-text{
+ .card-title{
    color: black;
+   display: flex;
+   flex-direction: column;
  }
+ .textData{
+  color: black;
+  font-size: 10px;
+  }
  ul{
-   list-style: none;
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
  }
  ul li{
     color: black;
+    text-align: left;
     font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
  }
  .btnTry {
   height: 30px;
@@ -442,4 +454,12 @@ span{
 .btnTry a{
 color: white;
 align-items: center;
+}
+.fa-check{
+  color: #03bca6;
+  margin-right: 5%;
+}
+.item{
+  font-size: 10px;
+  color: black;
 }
