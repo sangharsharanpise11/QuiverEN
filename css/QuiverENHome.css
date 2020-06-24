@@ -405,10 +405,7 @@ span{
  }
  .wrapperPackets> .firstCard, .secondCard, .thirdCard, .fourthCard
  {
-     /* width: 15%;
-     flex-wrap: wrap;
-     flex: initial;  */
-     background-color: white;
+    background-color: white;
  } 
  .card{
   border-radius: 0;
@@ -462,4 +459,15 @@ align-items: center;
 .item{
   font-size: 10px;
   color: black;
+}
+.card:hover .btnTry {
+  background-color: black;
+  color: white;
+}
+.card:hover  .card-header{
+  background-color: black;
+  color: white;
+}
+.card:hover{
+  transform: translateY(10px);
 }
