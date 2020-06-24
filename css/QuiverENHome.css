@@ -395,8 +395,12 @@ span{
    height: 500px;
    background-color: cadetblue;
   }
+  .container4{
+    height: 500px;
+    background-color:blueviolet;
+   }
  .wrapperPackets{
-     margin: 5% 5%;
+     margin: 5%;
      justify-content: space-between;
  }
  .wrapperPackets> .firstCard, .secondCard, .thirdCard, .fourthCard
@@ -419,5 +423,23 @@ span{
    list-style: none;
  }
  ul li{
-   color: black;
+    color: black;
+    font-size: 12px;
  }
+ .btnTry {
+  height: 30px;
+  margin: 9%;
+  background-color: blue;
+  color: white;
+  max-width: 165px;
+  text-align: center;
+  align-items: center;
+}
+ .card-text {
+  color: black;
+  font-size: 11px;
+}
+.btnTry a{
+color: white;
+align-items: center;
+}
