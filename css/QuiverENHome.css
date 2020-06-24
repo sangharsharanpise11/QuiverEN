@@ -382,6 +382,7 @@ span{
  } 
  .card{
   border-radius: 0;
+  transition: 0.5s ease-in-out;
  }
  .card-header{
    background-color: blue;
