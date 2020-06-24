@@ -436,12 +436,10 @@ align-items: center;
   color: black;
 }
 .card:hover .btnTry {
-  background-color: black;
-  color: white;
+  background-color: #09004d;  color: white;
 }
 .card:hover  .card-header{
-  background-color: black;
-  color: white;
+  background-color: #09004d;  color: white;
 }
 .card:hover{
   transform: translateY(-20px);
