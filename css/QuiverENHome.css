@@ -499,22 +499,21 @@ h5{
     background-repeat: no-repeat;
     background-position: center;
 }
-.sow-features-feature{
+.wrapperDiv .sow-features-feature{
   width: 200px;
   border-radius: 10px;
-  height: 300px;
+  height: 285px;
   margin-right: 10px;
   margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 grey;
+  flex: 1 0 auto;
 }
 .sow-icon-container img{
   width: 85px;
   height: 85px;
 }
-.quiver-section-wrapper.sow-features-list .sow-features-feature .item-box-border {
-  border-radius: 4px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  flex: 1 0 auto;
-}
+
 .wrapperDiv .container{
   display: flex;
   overflow: hidden;
