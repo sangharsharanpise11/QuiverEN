@@ -370,7 +370,7 @@ span{
    background-color:#04ebab ;
   }
   .container4{
-    height: 700px;
+    height: 730px;
    }
  .wrapperPackets{
      margin: 5%;
@@ -539,3 +539,25 @@ h5{
 .textwidget{
   margin-top: 5%;
 }
+.container5{
+  /* position: absolute; */
+  height: 720px;
+  background-color: #04ebab;
+  /* transform: translate(-50%, -50%); */
+ /* box-shadow: 0 25px 30px #04ebab; */
+ display: flex;
+}
+.content{
+  width: calc(58% + 700px);
+  height: 100%;
+  background-color: red;
+  box-sizing: border-box;
+  border-right: 620px solid #04ebab;
+  border-bottom: 720px solid transparent;
+}
+.imageBox{
+  width: 50% ;
+  height: 100%;
+  background-color: #04ebab;
+  box-sizing: border-box;
+ }
