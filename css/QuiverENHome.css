@@ -506,7 +506,7 @@ h5{
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
-  box-shadow: 0 5px 10px 0 grey;
+  box-shadow:0 0px 4px 0 grey;
   flex: 1 0 auto;
 }
 .sow-icon-container img{
