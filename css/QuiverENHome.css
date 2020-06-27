@@ -671,4 +671,84 @@ h5{
   transform: skewX(30deg);
   transform-origin: bottom right;
   }
-  
+  .container7{
+    width: 100%;
+    height: 305px;
+  }
+  .lastWrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 2rem;
+    background-image: url(../images/lady.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .lastWrapper .container{
+
+  }
+  .wrapper{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .right a{
+    font-size: 1.4rem;
+  }
+  .left p{
+    columns: white;
+    font-size: 1.4rem;
+  }
+  .wrapper .row {
+    display: flex;
+    padding: 2%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.art{
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+.right .underline{
+  color: white;
+}
+blockquote::before{
+    content: '\201D';
+    position: absolute;
+    left: 150px;
+    top: 52px;
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1;
+}
+.lastWrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(29,86,232,.25);
+}
