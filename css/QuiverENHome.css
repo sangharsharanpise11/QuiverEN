@@ -543,7 +543,6 @@ h5{
 }
 .container5{
   height: 720px;
-  /* background-color: #04ebab; */
   display: flex;
   position: relative;
   transition: color .5s;
@@ -551,7 +550,6 @@ h5{
 .content{
   width: calc(58% + 700px);
   height: 100%;
-  /* background-color: red; */
   box-sizing: border-box;
   border-right: 620px solid #04ebab;
   border-bottom: 720px solid transparent;
@@ -559,7 +557,6 @@ h5{
 .imageBox{
   width: 50% ;
   height: 100%;
-  /* background-color: #04ebab; */
   box-sizing: border-box;
  }
  .skewData{
@@ -623,3 +620,55 @@ h5{
     margin-bottom: 10px;
     align-items: baseline;
 }
+.container6{
+  height: 510px;
+  display: flex;
+  position: relative;
+  transition: color .5s;
+  width: 100%;
+ }
+.container6 .container{
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.wrapperPresentation{
+  height: 100%;
+  margin: 15px;
+}
+.wrapperPresentation .row{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.info, .blank{
+  width: 50%;
+}
+.info{
+  z-index: -1;
+  color: black;
+  background-color: blue;
+}
+.rightSkew{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/presentation.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.demo6{
+  width: 55%;
+  height: 510px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transform: skewX(30deg);
+  transform-origin: bottom right;
+  }
+  
