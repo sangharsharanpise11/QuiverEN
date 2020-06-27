@@ -88,7 +88,10 @@ padding: 10px;
     height: 46px;
     width: 180px;
 }
-
+#footerLogo img{
+  height: 30px;
+  width: 120px;
+}
 #sidebar:after {
     transform: skew(45deg); 
 }
@@ -106,7 +109,6 @@ padding: 10px;
     margin-left: auto;
     padding-right: 0px;
     padding-left: 0px;
-    margin-bottom: 5%;
 }
 .lastItems .container{
     padding-right: 0;
@@ -685,9 +687,6 @@ h5{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .lastWrapper .container{
-
-  }
   .wrapper{
     height: 100%;
     width: 80%;
@@ -752,3 +751,51 @@ blockquote::before{
   bottom: 0;
   background-color: rgba(29,86,232,.25);
 }
+footer{
+  background-color: #04ebab;
+}
+.footer-copyright{
+background-color: #09004d;
+}
+.footer-copyright ul{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.footer-copyright ul li a{
+  color: white;
+  margin-right: 20px;
+ }
+ address{
+  margin-top: 10px;
+  font-style: normal;
+  line-height: inherit;
+ }
+ .addr {
+  color: #09004d;
+  font-weight: 400;
+  font-size: 12px;
+ }
+ .list-unstyled li{
+  padding-bottom: 3px;
+  color: #09004d;
+ }
+ .list-unstyled {
+  margin-top: 15px;
+ }
+ .btn .btn-sm .btn-outline-white .my-0{
+   background-attachment: blue;
+   color: white;
+   float: right;
+ }
+ .col-md{
+  width: 50px;
+ }
+ .form-control{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+ }
