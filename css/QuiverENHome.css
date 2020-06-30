@@ -799,3 +799,178 @@ background-color: #09004d;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
  }
+ .text-right1 {
+  text-align: right;
+}
+.first, .second, .third{
+  display: flex;
+  flex-direction: column;
+}
+.wrapperDiv .container .row{
+  display: flex;
+  padding: 2%;
+  height: 100%;
+  flex-direction: row ;
+  justify-content: initial;
+  
+}
+
+
+ /* ************************** Media Queryn started ******************************* */
+ @media screen and (max-width : 320px){
+   #menu{
+     display: none;
+   }
+   #logo img {
+    height: 30px;
+    width: 95px;
+}
+.details{
+  width: 150px;
+  padding-top: 0;
+  text-align: initial;margin-left: 25px;
+}
+.wrapperDiv .container h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;  justify-content: center;
+}
+.wrapperDiv .container .row {
+  display: flex;
+  padding: 2%;
+  height: fit-content;
+  flex-direction: row !important;
+  justify-content: initial;
+  overflow: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+.container2 {
+  height: fit-content;
+}
+.container3 {
+  height: fit-content;
+  background-color: #04ebab;
+}
+.container5{
+  background-color: #04ebab;
+  height: fit-content;
+    display: flex;
+    position: relative;
+    transition: color .5s;
+}
+.container4 {
+  height: fit-content;
+}
+.first, .second, .third{
+  display: flex;margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapperItem{
+  margin: 0;
+}
+.image {
+  max-width: 85%;
+}
+.image {
+  width: 80%;
+  display: flex;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+}
+.caption {
+  width: 100%;
+  padding: 5%;
+  padding-top: 15px;
+  position: relative;
+}
+h2 {
+  color: white;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.text-right1 {
+  text-align: center;
+}
+.carousel-indicators{
+  bottom: 10px;
+}
+.animatedParagraph {
+  margin: 15px;
+}
+h3, #underline-gap {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: contents;
+  justify-content: center;
+}
+.wrapperCards {
+  margin-top: 5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.textwidget .sow-features-feature-text p{
+  display: inline-block;
+  position: relative;
+  width: inherit;
+  max-width: inherit;
+  height: auto;
+  padding: 4px;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.4rem;
+}
+.information{
+  order: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.compImg{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 1;
+}
+.skewData .row {
+  display: flex;
+  padding: 2%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.compImg img {
+  width: 275px;
+  height: 185px;
+  position: relative;
+  animation-name: imageDance;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.data {
+  width: 250px;
+  align-items: center;
+}
+.skewData .row .information h3{
+      font-weight: 600;
+      display: initial;
+      justify-content: initial;
+      margin-left: -115px;
+  
+}
+ }
