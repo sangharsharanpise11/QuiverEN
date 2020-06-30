@@ -814,12 +814,28 @@ background-color: #09004d;
   justify-content: initial;
   
 }
+.bigList{
+  display: flex;
+    justify-content: row;
+    justify-content: space-between;
+}
+.leftAddress{
 
-
+}
+footer .container{
+  padding: 5%;
+}
  /* ************************** Media Queryn started ******************************* */
  @media screen and (max-width : 320px){
    #menu{
      display: none;
+   }
+   footer .row{
+    display: flex;
+    padding: 5%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
    }
    #logo img {
     height: 30px;
@@ -962,6 +978,18 @@ h3, #underline-gap {
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
+.demo6 {
+  width: 100%;
+  height: 440px;
+  top: 70px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  transform: skewX(0deg);
+  transform-origin: bottom right;
+}
 .data {
   width: 250px;
   align-items: center;
@@ -972,5 +1000,89 @@ h3, #underline-gap {
       justify-content: initial;
       margin-left: -115px;
   
+}
+.info{
+  width: 100%;
+  margin-top: 62px;
+  margin-left: 15px;
+  margin-right: 20px;
+  z-index: 1;
+  color: white;
+  background-color: blue;
+}
+.blank{
+  display: none;
+}
+.info h3{
+  color: white;
+  text-align: center;
+}
+.info p{
+  text-align: right;
+  color: white;
+  margin-top: 25px;
+}
+.container7 {
+  width: 100%;
+  height: fit-content;
+}
+.wrapper .row {
+  display: flex;
+  padding: 2%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+blockquote::before {
+  content: '\201D';
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1;
+}
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row .col-md-4 .mx-auto{
+  text-align: left;
+}
+.col-md {
+  width: 100%;
+}
+.bigList{
+  display: flex;
+    justify-content: row;
+    justify-content: space-between;
+}
+.leftAddress{
+  text-align: left;
+}
+footer .container{
+  padding: 5%;
+}
+.footer-copyright ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
 }
  }
