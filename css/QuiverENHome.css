@@ -1565,3 +1565,42 @@ blockquote::before {
   color: white;
 }
  }
+ 
+ /****************************** 768px ************************* */
+ @media screen and (min-width: 769px) and (max-width: 1024px){
+  ul li {
+    color: grey;
+    text-align: left;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+ .container3 {
+  height: fit-content;
+  background-color: #04ebab;
+}
+.info{
+  width: 50%;
+  z-index: 1;
+  font-size: 15px;
+  color: white;
+  background-color: blue;
+}
+.container6 .rightSkew .container .wrapperPresentation .row .info h3,p{
+  color: white;
+}
+p{
+  color: grey;
+}
+blockquote::before {
+  content: '\201D';
+  position: absolute;
+  left: 75px;
+  top: 20px;
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1;
+}
+ }
