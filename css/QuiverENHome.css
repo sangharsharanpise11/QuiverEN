@@ -803,8 +803,9 @@ border-bottom-left-radius: 0;
 text-align: right;
 }
 .first, .second, .third{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .wrapperDiv .container .row{
 display: flex;
@@ -1105,7 +1106,7 @@ margin-top: 0;
 }
 
 }
-/* 425px */
+/****************************************** 425px *****************************/
  @media screen and (min-width: 321px) and (max-width: 425px){
 header{
   height: 70px;
@@ -1399,4 +1400,168 @@ header{
   align-items: baseline;
  }
  }
- 
+ /****************************** 768px ************************* */
+ @media screen and (min-width: 426px) and (max-width: 768px){
+   #menu{
+     display: none;
+   }
+   header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+  }
+  h3, #underline-gap {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #09004d;
+    display: flow-root;
+    text-align: left;
+}
+.card-deck .card {
+  flex: 35%;
+}
+.wrapperPackets{
+  display: flex;
+    margin: 0;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-deck {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: wrap;
+}
+  .container2 {
+    height: fit-content;
+}
+.container3 {
+  height: fit-content;
+}
+.container4 {
+  height: fit-content;
+}  
+.wrapperDiv .container .row {
+  display: flex;
+  padding: 2%;
+  height: fit-content;
+  flex-direction: row !important;
+  justify-content: initial;
+  overflow: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 0;
+  margin-left: 0;
+  }
+  .textwidget .sow-features-feature-text p{
+    display: inline-block;
+    position: relative;
+    width: inherit;
+    max-width: inherit;
+    height: auto;
+    padding: 4px;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.4rem;
+    }
+  .container5 {
+      height: fit-content;
+      display: flex;
+      position: relative;
+      transition: color .5s;
+      background: #04ebab;
+  }
+  .information {
+    width: 100%;
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0;
+}
+.compImg {
+  width: 100%;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skewData {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+}
+.skewData .row {
+  display: flex;
+  padding: 2%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  .compImg img {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    animation-name: imageDance;
+    animation-duration: 10s;
+    animation-iteration-count: infinite
+  }
+  .wrapper .row {
+    display: flex;
+    padding: 2%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+blockquote::before {
+  content: '\201D';
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1;
+}
+.demo6 {
+  width: 100%;
+  height: 510px;
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  overflow: hidden;
+  transform: skewX(0deg);
+  transform-origin: bottom right;
+}
+.info {
+  width: 100%;
+  margin-top: 200px;
+  margin-left: 15px;
+  margin-right: 20px;
+  z-index: 1;    font-size: 15px;
+  color: white;
+  background-color: blue;
+}
+.info h3,p{
+  color: white;
+}
+ }
