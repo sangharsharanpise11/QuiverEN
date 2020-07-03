@@ -57,7 +57,7 @@ Router.prototype = {
         console.log("in goToRoute");
 
         (function(scope) { 
-            var url = '/views/user/' + htmlName,
+            var url = '/views/' + htmlName,
                 xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState === 4 && this.status === 200) {
