@@ -8,15 +8,30 @@
     flex-direction: column;
   }
   .comparePackage{
-      width: 100%;
-      height: 500px;
-      background-color: #c7f9eb;
+    width: 100%;
+    height: fit-content;
+    background-color: #c7f9eb;
   }
   .table {
+    z-index: 1;
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
     background: white;
+    margin-top: -3%;
+}
+.comparePackage .card-deck {
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-right: -15px;
+  margin-left: 212px;
+  width: 83%;
+  margin-top: 2%;
+}
+td{
+  width: 20%;
+  text-align: center;
 }
   header{
     background-color: white;
@@ -130,6 +145,7 @@
     height: 100%;
     flex-direction: column;
     padding: 0;
+    padding-top: 3%;
   }
   .item{
     height: fit-content;
