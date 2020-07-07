@@ -8,13 +8,14 @@
     flex-direction: column;
   }
   .video{
-      height: 600px;
+      height: 520px;
       width: 100%;
   }
   video{
       height: 600px;
       width: 100%;
       object-fit: fill;
+      
   }
   .videoData{
     position: absolute;
@@ -37,7 +38,7 @@
       bottom: 0;
       width: auto;
       height: auto;
-      z-index: -1;
+   
   }
   .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
