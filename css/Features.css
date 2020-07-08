@@ -448,6 +448,10 @@ td{
   transform-origin: bottom left;
   z-index: -1;
   }
+  .wrapperCards1 {
+    display: flex;
+    padding: 2%;
+}
   .para{
     padding-left: 2%;
     padding-right: 2%;
@@ -926,6 +930,7 @@ td{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .wrapperDiv .container .row{
   display: flex;
