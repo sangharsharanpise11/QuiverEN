@@ -407,7 +407,7 @@ td{
   #underline-gap {
     text-decoration: underline;
     text-underline-position: under;
-    width: 150px;
+    width: 120px;
     color: #09004d;
     margin-left: 0px;
   }
@@ -673,6 +673,14 @@ td{
   position: relative;
   transition: color .5s;
   }
+  td img {
+    vertical-align: middle;
+    border-style: none;
+    width: 60%;
+}
+.twoImages{
+  margin-bottom: 2%;
+}
   .content{
   width: calc(58% + 700px);
   height: 100%;
