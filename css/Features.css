@@ -1014,6 +1014,22 @@ article ul {
    #menu{
      display: none;
    }
+   .container55 {
+    height: fit-content;
+    display: flex;
+    position: relative;
+    transition: color .5s;
+    background: blue;
+}
+.wrapperCards1 {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.card-deck .card {
+  margin-bottom: 15px;
+  width: 270px;
+}
    footer .row{
     display: flex;
     padding: 5%;
@@ -1021,6 +1037,19 @@ article ul {
     flex-direction: row;
     justify-content: center;
    }
+   .video {
+    height: 410px;
+    width: 100%;
+}
+.container-fluid .container {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 3%;
+  text-align: center;
+}
    #logo img {
     height: 30px;
     width: 95px;
@@ -1061,6 +1090,19 @@ article ul {
     position: relative;
     transition: color .5s;
   }
+  .videoData {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    left: 15%;
+    bottom: 10%;
+    width: 70%;
+    align-items: center;
+    top: 50%;
+    bottom: 50%;
+    margin: auto 0;
+}
   .container4 {
   height: fit-content;
   }
@@ -1073,23 +1115,7 @@ article ul {
   .wrapperItem{
   margin: 0;
   }
-  .image {
-  max-width: 85%;
-  }
-  .image {
-  width: 80%;
-  display: flex;
-  height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  justify-content: center;
-  }
-  .caption {
-  width: 100%;
-  padding: 5%;
-  padding-top: 15px;
-  position: relative;
-  }
+  
   h2 {
   color: white;
   text-align: left;
@@ -1099,12 +1125,11 @@ article ul {
   .text-right1 {
   text-align: center;
   }
-  .carousel-indicators{
-  bottom: 10px;
-  }
-  .animatedParagraph {
-  margin: 15px;
-  }
+  video {
+    height: 410px;
+    width: 100%;
+    object-fit: fill;
+}
   h3, #underline-gap {
   font-size: 1.5rem;
   font-weight: 600;
@@ -1113,12 +1138,17 @@ article ul {
   }
   .wrapperCards {
     margin-top: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 0%;
+    padding-right: 0%;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
   }
+  .animatedParagraph {
+    margin: 10px;
+    text-align: center;
+}
   .textwidget .sow-features-feature-text p{
   display: inline-block;
   position: relative;
@@ -1138,6 +1168,8 @@ article ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding-left: 0;
   }
   .compImg{
   width: 100%;
@@ -1176,12 +1208,12 @@ article ul {
   .data {
   width: 250px;
   align-items: center;
+  margin-right: 0px;
   }
   .skewData .row .information h3{
       font-weight: 600;
       display: initial;
       justify-content: initial;
-      margin-left: -115px;
   
   }
   .info{
@@ -1248,6 +1280,7 @@ article ul {
   width: 100%;
   }
   .bigList{
+    width: 90%;
   display: flex;
     justify-content: row;
     justify-content: space-between;
