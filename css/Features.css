@@ -33,12 +33,9 @@
     justify-content: left;
 }
   .video-background{
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: auto;
-      height: auto;
-   
+    position: relative;
+    right: 0;
+    bottom: 0;  
   }
   .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
