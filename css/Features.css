@@ -8,15 +8,14 @@
     flex-direction: column;
   }
   .video{
-      height: 520px;
+      height: 550px;
       width: 100%;
   }
   video{
-      height: 600px;
+      height: 550px;
       width: 100%;
       object-fit: fill;
-      
-  }
+   }
   .videoData{
     position: absolute;
     text-align: center;
@@ -37,7 +36,51 @@
     right: 0;
     bottom: 0;  
   }
-  .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  .card ul{
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    /* margin-top: 30px; */
+    font-size: 15px;
+  }
+  .card .textwidget p{
+    font-size: 12px;
+  }
+  .card ul li {
+    color: grey;
+    text-align: left;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 3%;
+}
+  .card img{
+    vertical-align: middle;
+    border-style: none;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  .features{
+    width: 100%;
+    height:fit-content;
+  }
+  .features .container
+{
+  width: 100%;
+  height: 100%;
+} 
+.imageAndCard{
+  width: 80%;
+  height: fit-content;
+  margin-left: 10%;
+}
+.h-100 {
+  height: 80%!important;
+  border: none;
+}
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
@@ -369,9 +412,9 @@ td{
     margin-left: 0px;
   }
   .wrapperCards{
-    margin-top: 5%;
-    padding-left: 4%;
-    padding-right: 4%;
+    margin-top: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -380,21 +423,35 @@ td{
       width: 82px;
       height: 82px;
   }
-  b{
-    margin-bottom: 20px;
-  }
-  .details{
-    padding-top: 10%;
-      display: flex;
+   .details{
+        display: flex;
       flex-direction: column;
   }
   b{
       color: blue;
   }
+  .container55{
+    height: 720px;
+    display: flex;
+    position: relative;
+    transition: color .5s;
+  }
+  .demo5{
+    width: 80%;
+  height:720px;
+  background-color: #04ebab;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transform: skewX(40deg);
+  transform-origin: bottom left;
+  z-index: -1;
+  }
   .para{
     padding-left: 2%;
     padding-right: 2%;
-    color: grey;
+    color: grey;    font-size: 13px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   }
   .animatedParagraph h3{
@@ -467,7 +524,6 @@ td{
   list-style: none;
   width: 100%;
   padding-left: 0;
-  margin-top: 30px;
   }
   ul li{
     color: grey;
@@ -608,7 +664,7 @@ td{
   margin-top: 5%;
   }
   .container5{
-  height: 720px;
+  height: 450px;
   display: flex;
   position: relative;
   transition: color .5s;
@@ -666,7 +722,7 @@ td{
   }
   .demo{
   width: 80%;
-  height: 720px;
+  height:450px;
   background-color: #04ebab;
   position: absolute;
   top: 0;
@@ -1043,13 +1099,12 @@ article ul {
   justify-content: center;
   }
   .wrapperCards {
-  margin-top: 5%;
-  padding-left: 4%;
-  padding-right: 4%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    margin-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
   .textwidget .sow-features-feature-text p{
   display: inline-block;
@@ -1322,13 +1377,12 @@ article ul {
     width: 350px;
   }
    .wrapperCards {
-   margin-top: 5%;
-   padding-left: 4%;
-   padding-right: 4%;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+    margin-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
    }
    .textwidget .sow-features-feature-text p{
    display: inline-block;
