@@ -1267,7 +1267,7 @@ article ul {
   line-height: 1;
   }
   .right {
-  width: 100%;
+  width: 100%; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1608,6 +1608,29 @@ article ul {
       justify-content: space-between;
       margin-left: 5%;
     }
+    .imageAndCard > .row > .col-sm-4:first-child {
+      background-color: red;
+      display:none; 
+  }
+  .imageAndCard > .row > .col-sm-4:nth-child(2) {
+   order: 1; 
+}
+    .imageAndCard .row {
+      display: flex;
+      padding: 2%;
+      height: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+    .features .container {
+      display: flex;
+      overflow: hidden;
+      height: 100%;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 3%;
+      align-items: center;
+  }
     h3, #underline-gap {
       font-size: 1.5rem;
       font-weight: 600;
@@ -1671,15 +1694,27 @@ article ul {
         transition: color .5s;
         background: #04ebab;
     }
-    .information {
+   .container5 .container .skewData .information {
       width: 100%;
       display: flex;
       order: 2;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
       padding-left: 0;
   }
+  .container55 .container .skewData .information{
+    width: 100%;
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0;
+    text-align: left;
+  }
+  .right a {
+    font-size: 10px;
+    width: 500px;
+}
   .compImg {
     width: 100%;
     order: 1;
@@ -1758,9 +1793,30 @@ article ul {
     background-color: blue;
   }
   .info h3,p{
-    color: white;
+    color: grey;
   }
+  .imageAndCard .row .col-sm-4 .py-2{
+    flex: 1 0 21%; 
+  margin: 5px;
+  height: 100px;
+  background-color: blue;
+  }
+  .animatedParagraph h3, #underline-gap {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #09004d;
+    display: flex;
+    text-align: left;
    }
+   .container55 {
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    transition: color .5s;
+    background: #04ebab;
+}
+}
    
    /****************************** 1024px ************************* */
    @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -1772,6 +1828,17 @@ article ul {
       flex-direction: row;
       justify-content: start;
   }
+  .container2 {
+    height: fit-content;
+}
+  .videoData {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    left: 30%;
+    bottom: 25%;
+}
    .container3 {
     height: fit-content;
     background-color: #04ebab;
@@ -1842,5 +1909,86 @@ article ul {
     font-weight: 500;
     text-align: right;
   }
+  .videoData {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    left: 30%;
+    bottom: 35%;
+}
+.imageAndCard {
+  width: 100%;
+  height: fit-content;
+  margin-left: 0%;
+}
+.card .textwidget p {
+  font-size: 18px;
+}
+.card ul li {
+  color: grey;
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 3%;
+}
+.card img {
+  vertical-align: middle;
+  border-style: none;
+  object-fit: fill;
+  width: 45%;
+  height: 90%;
+}
+b {
+  color: blue;
+  font-size: 20px;
+}
+.data p{
+  font-size: 19px;
+}
+.data ul li {
+  color: grey;
+  text-align: left;
+  font-size: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+.container2 {
+  height: fit-content;
+}
+.art {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.right {
+  align-items: baseline;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapperCards {
+  margin-top: 4%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.para {
+  padding-left: 2%;
+  padding-right: 2%;
+  color: grey;
+  font-size: 19px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.col-sm-4 .py-2{
+  height: 500px;
+}
    }
    
