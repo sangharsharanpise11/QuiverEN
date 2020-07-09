@@ -908,6 +908,30 @@ article ul {
    #menu{
      display: none;
    }
+   .container-fluid .container {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    padding-top: 3%;
+}
+   .comparePackage .card-deck {
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    /* margin-right: -15px; */
+    margin-left: 20px;
+    width: 83%;
+    margin-top: 7%;
+    text-align: center;
+    align-items: center;
+}
+   .card-deck .card {
+    margin-bottom: 15px;
+    width: 250px;
+}
    footer .row{
     display: flex;
     padding: 5%;
@@ -1143,6 +1167,7 @@ article ul {
   width: 100%;
   }
   .bigList{
+    width: 90%;
   display: flex;
     justify-content: row;
     justify-content: space-between;
@@ -1174,6 +1199,15 @@ article ul {
     justify-content: space-between;
     margin-left: 5%;
   }
+  .comparePackage .card-deck {
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: 9%;
+    width: 83%;
+    margin-top: 2%;
+}
     #menu{
       display: none;
     }
@@ -1464,6 +1498,28 @@ article ul {
      #menu{
        display: none;
      }
+     .container-fluid .container {
+      display: flex;
+      overflow: hidden;
+      height: 100%;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 3%;
+      /* text-align: center; */
+      align-items: center;
+  }
+  .right a {
+    font-size: 0.4rem;
+}
+  .comparePackage .card-deck {
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -18px;
+    width: 83%;
+    margin-top: 2%;
+}
      header{
       height: 70px;
       display: flex;
