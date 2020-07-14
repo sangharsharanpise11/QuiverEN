@@ -64,6 +64,8 @@ Router.prototype = {
                     scope.rootElem.innerHTML = this.responseText;
                 }
             };
+        
+console.log("html page ="+url);
             xhttp.open('GET', url, true);
             xhttp.send();
         })(this);

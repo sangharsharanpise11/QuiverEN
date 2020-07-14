@@ -25,6 +25,8 @@ Route.prototype = {
         this.name = name;
         this.htmlName = htmlName;
         this.default = defaultRoute;
+
+        console.log("this.name => "+this.name);
     },
     
     isActiveRoute: function (hashedPath) {
