@@ -11,7 +11,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v3.0.1/dist/bootstrap-float-label.min.css"/>
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>   
+
   </head>
   <body>
     <div id="app" >
@@ -27,5 +28,49 @@
     <script src="/js/Features.js"></script>
     <script src="/js/Package.js"></script>
     <script src="/js/Support.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.first').waypoint(function(direction){
+          $('.first').addClass('animated backInLeft')
+        },{
+          offset:'400px'
+        })
+       })
+    
+       $(document).ready(function(){
+        $('.third').waypoint(function(direction){
+          $('.third').addClass('animated backInRight')
+        },{
+          offset:'400px'
+        })
+       })
+
+       $(document).ready(function(){
+        $('h3').waypoint(function(direction){
+          $('h3').addClass('animated fadeInUp')
+        },{
+          offset:'400px'
+        })
+       })
+
+       $(document).ready(function(){
+        $('h3').waypoint(function(direction){
+          $('h3').addClass('animated backInRight')
+        },{
+          offset:'400px'
+        })
+       })
+
+       $(document).ready(function(){
+        $('.card1').waypoint(function(direction){
+          $('.card1').addClass('animated slideInUp','3s')
+        },{
+          offset:'500px'
+        })
+       })
+
+    </script>
   </body>
 </html>

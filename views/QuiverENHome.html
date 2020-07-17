@@ -15,6 +15,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>   
 
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+      />
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -25,7 +29,8 @@
     <body>
     
        <header>
-        <div id="logo">
+
+        <div id="logo"  >
             <img src="https://www.quivercloud.com/wp-content/uploads/2019/03/Logo.png">
         </div>
         <nav id="menu">
@@ -209,10 +214,10 @@
             <div class="container">
                 <div class="wrapperAnimated">
                   <div class="animatedParagraph">
-                      <h3 data-aos="fade-down"  data-aos-duration="3000">Want to share data securely while retaining control? - <span id="underline-gap">  &nbsp Quiver it</span></h3>
+                      <h3 class="heading">Want to share data securely while retaining control? - <span id="underline-gap">  &nbsp Quiver it</span></h3>
                       
                       <div class="wrapperCards">
-                        <div data-aos="fade-right" data-aos-duration="3000" class="first sow-features-feature sow-icon-container-position-top sow-features-feature-last-row col-lg-4 col-md-4">
+                        <div class="first sow-features-feature sow-icon-container-position-top sow-features-feature-last-row col-lg-4 col-md-4">
                           <img class="product_image" src="../images/computer.png"><br>
                           <div class="details">
                             <b>SECURE YOUR DATA SEPARATELY ON ALL YOUR DEVICES</b>
@@ -228,7 +233,7 @@
                           </div>
                         </div>
                       
-                        <div data-aos="fade-left" data-aos-duration="3000" class="third sow-features-feature sow-icon-container-position-top sow-features-feature-last-row col-lg-4 col-md-4">
+                        <div class="third sow-features-feature sow-icon-container-position-top sow-features-feature-last-row col-lg-4 col-md-4">
                           <img class="product_image" src="../images/function.png"><br>
                           <div class="details">
                             <b>RETAIN COMPLETE CONTROL OVER ACCESS TO YOUR DATA</b> 
@@ -247,7 +252,7 @@
             <div class="wrapperPackets row equal mt-4">
              
                 <div class="card-deck">
-                  <div class="card card1" data-aos="fade-up"  data-aos-duration="1000">
+                  <div class="card card1" >
                     <div class="card-header">Quiver Free</div>
                     <div class="card-body">
                       <h5 class="card-title" style="font-size: 1.50rem;">Free 
@@ -263,7 +268,7 @@
                     </div>
                   </div>
 
-                  <div class="card card1" data-aos="fade-up"  data-aos-duration="2000">
+                  <div class="card card1" >
                     <div class="card-header">Quiver Plus</div>
                     <div class="card-body">
                       <h5 class="card-title"> <i class="fa fa-eur" aria-hidden="true" style="font-size: 1.50rem;">&nbsp 4,99</i><span class="textData">/ month /user</span></h5>
@@ -278,7 +283,7 @@
                     </div>
                   </div>
 
-                  <div class="card card1" data-aos="fade-up"  data-aos-duration="3000">
+                  <div class="card card1" >
                     <div class="card-header">Quiver Pro</div>
                     <div class="card-body">
                       <h5 class="card-title"><i class="fa fa-eur" aria-hidden="true" style="font-size: 1.50rem;">&nbsp 6,99</i><p class="card-text">/ month / user</p></h5>
@@ -295,7 +300,7 @@
                     </div>
                   </div>
 
-                  <div class="card card1" data-aos="fade-up"  data-aos-duration="4000">
+                  <div class="card card1" >
                     <div class="card-header">Quiver Enterprise</div>
                     <div class="card-body">
                       <h5 class="card-title" style="font-size: 1.50rem;">Request now<p class="card-text">Total control & ownership of your encryption</p></h5>
@@ -640,15 +645,63 @@
 
     </div>
     </div>
+    <script src="../js/QuiverHome.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+     <!-- <script src="../js/QuiverHome.js"></script>
+    <script type="text/javascript">
+    ScrollOut({
+      targets: '.third, .first'
+    }) -->
+    <!-- </script>    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
+  <script>      AOS.init({
          duration:1000
+      }); -->
+  <script>
+    $(document).ready(function(){
+      $('.first').waypoint(function(direction){
+        $('.first').addClass('animated backInLeft')
+      },{
+        offset:'400px'
+      })
+
+      $('.third').waypoint(function(direction){
+        $('.third').addClass('animated backInRight')
+      },{
+        offset:'400px'
+      })
+     })
+  
+     $(document).ready(function(){
+      $('.third').waypoint(function(direction){
+        $('.third').addClass('animated bounce')
+      },{
+        offset:'400px'
+      })
+     })
+
+     $(document).ready(function(){
+        $('h3').waypoint(function(direction){
+          $('h3').addClass('animated backInRight')
+        },{
+          offset:'400px'
+        })
+       })
+
+       $(document).ready(function(){
+        $('.card1').waypoint(function(direction){
+          $('.card1').addClass('animated slideInUp','3s')
+        },{
+          offset:'500px'
+        })
+       })
+
+       $(".card1").hover(function(){
+      //  $(this).css("transform","translateY(-20px)");
+       $(this).addClass('up');
       });
-    </script>
+  </script>
     </body>
     </html>
-
-
-<!-- https://www.youtube.com/watch?v=A11xEtSNDr8 -->
+    .<!-- https://www.youtube.com/watch?v=A11xEtSNDr8 -->
  
