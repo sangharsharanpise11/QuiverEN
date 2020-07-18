@@ -13,9 +13,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>   
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+      />
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
     <body>
@@ -320,11 +327,11 @@
 
             <div class="container3">
                 <div class="container" style="padding:3%;">
-                <h3 class="cardHeader" data-aos="fade-down">Which Quiver packet would suit you best? </h3>
+                <h3 class="cardHeader" >Which Quiver packet would suit you best? </h3>
                 <div class="wrapperPackets row equal mt-4">
                 
                     <div class="card-deck">
-                        <div class="card card1" data-aos="fade-up"  data-aos-duration="1000">
+                        <div class="card card1">
                         <div class="card-header">Quiver Free</div>
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.50rem;">Free 
@@ -340,7 +347,7 @@
                         </div>
                         </div>
 
-                        <div class="card card1" data-aos="fade-up"  data-aos-duration="2000">
+                        <div class="card card1">
                         <div class="card-header">Quiver Plus</div>
                         <div class="card-body">
                             <h5 class="card-title"> <i class="fa fa-eur" aria-hidden="true" style="font-size: 1.50rem;">&nbsp 4,99</i><span class="textData">/ month /user</span></h5>
@@ -355,7 +362,7 @@
                         </div>
                         </div>
 
-                        <div class="card card1" data-aos="fade-up"  data-aos-duration="3000">
+                        <div class="card card1">
                         <div class="card-header">Quiver Pro</div>
                         <div class="card-body">
                             <h5 class="card-title"><i class="fa fa-eur" aria-hidden="true" style="font-size: 1.50rem;">&nbsp 6,99</i><p class="card-text">/ month / user</p></h5>
@@ -372,7 +379,7 @@
                         </div>
                         </div>
 
-                        <div class="card card1" data-aos="fade-up"  data-aos-duration="4000">
+                        <div class="card card1">
                         <div class="card-header">Quiver Enterprise</div>
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 1.50rem;">Request now<p class="card-text">Total control & ownership of your encryption</p></h5>
@@ -536,11 +543,57 @@
 
             </div>
             </div>
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
             AOS.init({
                 duration:1000
-            });
+            }); -->
+     <!-- <script src="../js/QuiverHome.js"></script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+     <!-- <script src="../js/QuiverHome.js"></script>
+    <script type="text/javascript">
+    ScrollOut({
+      targets: '.third, .first'
+    }) -->
+    <!-- </script>    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>      AOS.init({
+         duration:1000
+      }); -->
+  <script>
+    $(document).ready(function(){
+      $('.first').waypoint(function(direction){
+        $('.first').addClass('animated backInLeft')
+      },{
+        offset:'400px'
+      })
+
+      $('.third').waypoint(function(direction){
+        $('.third').addClass('animated backInRight')
+      },{
+        offset:'400px'
+      })
+     })
+  
+        $(document).ready(function(){
+        $('h3').waypoint(function(direction){
+          $('h3').addClass('animated backInRight')
+        },{
+          delay:10,
+          offset:'400px'
+        })
+       })
+
+       $(document).ready(function(){
+        $('.card1').waypoint(function(direction){
+          $('.card1').addClass('animated slideInUp','3s'),
+          $('.card1').hover().addClass('animated shakeX')
+        },{
+          delay:10,
+          offset:'500px'
+        })
+       })
+           </script>
             </script>
             </body>
             </html>
