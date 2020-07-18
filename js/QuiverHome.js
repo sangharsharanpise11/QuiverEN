@@ -1,8 +1,13 @@
-$(".card1").hover(function(){
-    $(this).css("transform","translateY(-20px)");
-    // $(this).addClass('fadeInUp' + $(this).data('action'));
-});
+// $(".card1").hover(function(){
+//     console.log("in caed1");
+//     $(this).css("transform","translateY(-20px)");
+//     // $(this).addClass('fadeInUp' + $(this).data('action'));
+// });
 
+
+$('.card1').hover(
+    function(){console.log("in card1"); $(this).addClass('bounce')  }
+)
 var ScrollOut = (function () {
     'use strict';
   

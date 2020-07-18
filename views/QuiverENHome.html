@@ -645,7 +645,7 @@
 
     </div>
     </div>
-    <script src="../js/QuiverHome.js"></script>
+    <!-- <script src="../js/QuiverHome.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
      <!-- <script src="../js/QuiverHome.js"></script>
     <script type="text/javascript">
@@ -672,34 +672,38 @@
       })
      })
   
-     $(document).ready(function(){
-      $('.third').waypoint(function(direction){
-        $('.third').addClass('animated bounce')
-      },{
-        offset:'400px'
-      })
-     })
+    //  $(document).ready(function(){
+    //   $('.third').waypoint(function(direction){
+    //     $('.third').addClass('animated bounce')
+    //   },{
+    //     offset:'400px'
+    //   })
+    //  })
 
      $(document).ready(function(){
         $('h3').waypoint(function(direction){
           $('h3').addClass('animated backInRight')
         },{
+          delay:10,
           offset:'400px'
         })
        })
 
        $(document).ready(function(){
         $('.card1').waypoint(function(direction){
-          $('.card1').addClass('animated slideInUp','3s')
+          $('.card1').addClass('animated slideInUp','3s'),
+          $('.card1').hover().addClass('animated shakeX')
         },{
+          delay:10,
           offset:'500px'
         })
        })
 
-       $(".card1").hover(function(){
-      //  $(this).css("transform","translateY(-20px)");
-       $(this).addClass('up');
-      });
+      //  $(".card1").bounce({
+      //    delay:10,
+      //    time:1000
+      // //  $(this).css("transform","translateY(-20px)");
+      //      });
   </script>
     </body>
     </html>

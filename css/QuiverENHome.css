@@ -444,10 +444,19 @@ background-color: #09004d;  color: white;
 .card1:hover  .card-header{
 background-color: #09004d;  color: white;
 }
-.up{
-transform: translateY(-20px);
+.card1:hover{
+opacity: 1;
+animation: classUp 1s;
+animation-delay: 0.5s;
 }
-
+@keyframes classUp{
+ 0%{
+  transform: translateY(-25px);
+ }
+ 100%{
+  transform: translateY(-30px);
+ }
+}
 @keyframes Slide_UpCard{
 0%{
   transform: translateY(150px);
